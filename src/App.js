@@ -5,7 +5,11 @@ const characters = [
   {name: "Akuma", color: 'red'},
   {name: "Bob", color: 'green'},
   {name: "Eddy", color: 'yellow'},
-  {name: "Geese", color: 'blue'}
+  {name: "Geese", color: 'blue'},
+  {name: "Jin", color: 'purple'},
+  {name: "Kazuya", color: 'pink'},
+  {name: "Bryan", color: 'orange'},
+  {name: "Gigas", color: 'black'}
 ]
 
 function App() {
@@ -15,7 +19,7 @@ function App() {
       <div className="fighters-grid">
         {characters.map((element) => {
           return (
-            <Fighter name={element.name} />
+            <Fighter name={element.name} color={element.color} />
           )
         })}
       </div>
